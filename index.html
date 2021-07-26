@@ -9,15 +9,162 @@
     <!-- bootstrap style -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4b91420911.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <!-----------
-         Heading Starts 
+         Header Starts 
         ----------------->
     <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center fs-6 text-info" href="#">
+                    <img style="width: 100px; height: 100%;" src="images/logo/logo-rm.png" alt="" width="30"
+                        height="24">Book
+                    Time With Kamil
+                </a>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
 
+                    <!-- Side bar -->
+                    <a class="ps-5 pe-3 text-light" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="fas fa-user-circle fs-1"></i>
+                    </a>
+
+                    <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title text-center" id="offcanvasExampleLabel">Profile
+                            </h3>
+                            <button type="button" class="btn-close btn-close-white text-reset"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                Get posting update from Book Time With Kamil by signing up with your email.
+                            </div>
+                            <ul class="list-inline d-flex justify-content-around my-5">
+                                <!--Sign In Modal Starts -->
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn text-light btn-secondary btn-lg" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    SIGN IN
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade text-dark" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Sign In</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Email
+                                                            address</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                        <div id="emailHelp" class="form-text">We'll never share your
+                                                            email with anyone else.</div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label">Password</label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Ends -->
+                                <!--Sign Up Modal Starts -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn text-light btn-secondary btn-lg" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop2">
+                                    SIGN UP
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade text-dark" id="staticBackdrop2" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Email
+                                                            address</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                        <div id="emailHelp" class="form-text">We'll never share your
+                                                            email with anyone else.</div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputPassword1" class="form-label">New
+                                                            Password</label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputPassword1" class="form-label">Re-enter
+                                                            Password</label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Ends -->
+
+                            </ul>
+                            <div>
+                                <img style="width: 100%;" src="images/logo/logo-rm-text.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-----------
          Main Body Starts 
