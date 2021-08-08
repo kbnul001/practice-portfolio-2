@@ -1,5 +1,5 @@
 .head-banner{
-    background-image: url("/images/books/top-pic.png");
+    background-image: url('../images/books/top-pic.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
